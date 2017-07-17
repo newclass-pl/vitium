@@ -1,0 +1,15 @@
+{
+  "name": "newclass/vitium",
+  "description": "PHP error manager.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michal Tomczak",
+      "email": "michal.tomczak@newclass.pl"
+    }
+  ],
+  "autoload": {
+    "psr-4": { "Vitium\\": "src/Vitium" }
+  }
+}
