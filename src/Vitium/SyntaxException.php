@@ -19,7 +19,8 @@ namespace Vitium;
  *
  * @author Michal Tomczak (michal.tomczak@newclass.pl)
  */
-class SyntaxException extends \Exception{
+class SyntaxException extends \Exception
+{
 
     /**
      * @var int
@@ -34,10 +35,11 @@ class SyntaxException extends \Exception{
      * @param int $line
      * @param int $level
      */
-	public function __construct($message,$file, $line,$level=0){
-		parent::__construct($message);
-		$this->file=$file;
-		$this->line=$line;
-        $this->level=$level;
-	}
+    public function __construct($message, $file, $line, $level = 0)
+    {
+        parent::__construct($message);
+        $this->file = $file;
+        $this->line = $line;
+        $this->level = $level;
+    }
 }

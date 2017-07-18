@@ -21,12 +21,13 @@ use \Exception;
  *
  * @author Michal Tomczak (michal.tomczak@newclass.pl)
  */
-interface ErrorHandlerInterface{
+interface ErrorHandlerInterface
+{
 
-	/**
-	 *
-	 * @param Exception $exception
-	 */
-	public function execute(Exception $exception);
+    /**
+     *
+     * @param Exception $exception
+     */
+    public function execute(Exception $exception);
 
 }
