@@ -9,7 +9,13 @@
       "email": "michal.tomczak@newclass.pl"
     }
   ],
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
   "autoload": {
-    "psr-4": { "Vitium\\": "src/Vitium" }
+    "psr-4": {
+      "Vitium\\": "src/Vitium",
+      "Test\\": "test"
+    }
   }
 }

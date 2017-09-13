@@ -14,7 +14,7 @@
 
 namespace Vitium;
 
-use \Exception;
+use \Throwable;
 
 /**
  * Error dispatcher.
@@ -81,12 +81,12 @@ class ErrorDispatcher
     }
 
     /**
-     * Exception callback.
+     * Throwable callback.
      *
-     * @param Exception $exception
+     * @param Throwable $exception
      * @return bool
      */
-    public function exception(Exception $exception)
+    public function exception(Throwable $exception)
     {
         if ($this->stopPropagation) {
             return false;
@@ -114,9 +114,9 @@ class ErrorDispatcher
 
     /**
      *
-     * @param Exception $exception
+     * @param Throwable $exception
      */
-    private function fireHandlers(Exception $exception)
+    private function fireHandlers(Throwable $exception)
     {
         foreach ($this->handlers as $handler) {
             $handler->execute($exception);

@@ -14,7 +14,7 @@
 
 namespace Vitium;
 
-use \Exception;
+use \Throwable;
 
 /**
  * Error handler
@@ -26,8 +26,8 @@ interface ErrorHandlerInterface
 
     /**
      *
-     * @param Exception $exception
+     * @param Throwable $exception
      */
-    public function execute(Exception $exception);
+    public function execute(Throwable $exception);
 
 }

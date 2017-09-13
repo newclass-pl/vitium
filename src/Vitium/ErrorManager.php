@@ -14,7 +14,7 @@
 
 namespace Vitium;
 
-use \Exception;
+use \Throwable;
 
 /**
  * Error manager.
@@ -82,11 +82,11 @@ class ErrorManager
     }
 
     /**
-     * Exception callback.
+     * Throwable callback.
      *
-     * @param Exception $exception
+     * @param Throwable $exception
      */
-    public function exception(Exception $exception)
+    public function exception(Throwable $exception)
     {
         $this->dispatcher->exception($exception);
     }
